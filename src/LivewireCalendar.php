@@ -236,7 +236,7 @@ class LivewireCalendar extends Component
 
         return view($this->calendarView)
             ->with([
-                'componentId' => $this->id,
+                'componentId' => $this->id(),
                 'monthGrid' => $this->monthGrid(),
                 'events' => $events,
                 'getEventsForDay' => function ($day) use ($events) {
